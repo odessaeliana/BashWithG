@@ -1,0 +1,5 @@
+# clone-*, cd-*, code-* and export Directory* variables
+alias cd-bash-profile="cd $DirectoryBashProfile"
+alias clone-bash-profile-template="git clone https://github.com/HappySaila/bash-profile-template"
+alias code-bash-profile="cd-bash-profile && code ."
+export DirectoryBashProfile=$DirectoryRepos/bash-profile
