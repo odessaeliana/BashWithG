@@ -9,9 +9,11 @@ fi
 DirectoryRepos=$1
 
 # Write .bashrc linking commands with the provided directory
-echo "export DirectoryRepos=$DirectoryRepos
+cat <<EOF > ~/.bashrc
+export DirectoryRepos=$DirectoryRepos
 source \$DirectoryRepos/bash-profile/.bash_profile
-source \$DirectoryRepos/bash-profile/.bash_profile_personal" > ~/.bashrc
+source \$DirectoryRepos/bash-profile/.bash_profile_personal
+EOF
 
 # Source the updated .bashrc to apply changes
 source ~/.bashrc
