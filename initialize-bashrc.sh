@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Check if a parameter is passed; if not, echo usage and exit
 if [ $# -eq 0 ]; then
   echo "Usage: $0 [Reposotories Directory]"
