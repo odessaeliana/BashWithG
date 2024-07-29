@@ -13,12 +13,8 @@ DirectoryRepos=$1
 # Write .bashrc linking commands with the provided directory
 cat << EOF > ~/.bashrc
 export DirectoryRepos=$DirectoryRepos
-if [ -f "\$DirectoryRepos/bash-profile/.bash_profile" ]; then
-    source "\$DirectoryRepos/bash-profile/.bash_profile"
-fi
-if [ -f "\$DirectoryRepos/bash-profile/.bash_profile_personal" ]; then
-    source "\$DirectoryRepos/bash-profile/.bash_profile_personal"
-fi
+source \$DirectoryRepos/bash-profile/.bash_profile
+source \$DirectoryRepos/bash-profile/.bash_profile_personal
 EOF
 
 # Source the updated .bashrc to apply changes
