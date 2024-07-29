@@ -12,7 +12,7 @@ DirectoryRepos=$1
 
 # Write .bashrc linking commands with the provided directory
 cat <<EOF > ~/.bashrc
-export DirectoryRepos=/home/bongiswaeliana/bash-profile
+export DirectoryRepos=$DirectoryRepos
 source $DirectoryRepos/.bash_profile
 source $DirectoryRepos/.bash_profile_personal
 EOF
