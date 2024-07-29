@@ -1,9 +1,16 @@
 # Environment Variables
 export TRASH=~/trash/
 export VISUAL=code
-source $DirectoryRepos/bash-profile/.bash_profile_env
-source $DirectoryRepos/bash-profile/.bash_profile_browser
-source $DirectoryRepos/bash-profile/.bash_profile_personal
+if [ -f "$DirectoryRepos/bash-profile/.bash_profile_env" ]; then
+    source "$DirectoryRepos/bash-profile/.bash_profile_env"
+fi
+if [ -f "$DirectoryRepos/bash-profile/.bash_profile_browser" ]; then
+    source "$DirectoryRepos/bash-profile/.bash_profile_browser"
+fi
+if [ -f "$DirectoryRepos/bash-profile/.bash_profile_personal" ]; then
+    source "$DirectoryRepos/bash-profile/.bash_profile_personal"
+fi
+
 if [[ "$GOOGLE_CLOUD_WORKSTATIONS" == "true" ]]; then
   source /etc/bash_completion.d/git-prompt 
 fi
