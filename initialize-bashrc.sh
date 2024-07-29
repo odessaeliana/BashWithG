@@ -1,6 +1,4 @@
 #!/bin/bash
-
->>>>>>> 91a2e5a3e0ed5225186eae21e896f455c5bbe7d7
 # Check if a parameter is passed; if not, echo usage and exit
 if [ $# -eq 0 ]; then
   echo "Usage: $0 [Repositories Directory]"
