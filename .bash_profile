@@ -1,3 +1,4 @@
+export DirectoryRepos=~/bash-profile
 # Environment Variables
 export TRASH=~/trash/
 export VISUAL=code
