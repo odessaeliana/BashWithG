@@ -150,10 +150,11 @@ alias trash-create="mkdir -p $TRASH"
 alias trash-empty="rm -rf $TRASH/* && echo 'emptied trash'"
 # UUUUU
 declare -A urls=(
-  ["local"]="localhost:8080"
-  ["cloudrun"]="https://go-template-infrastructure-5rgisb4ctq-uc.a.run.app"
-  ["gae"]="https://grant-wilson.uc.r.appspot.com"
-  )
+["local"]="localhost:8080"
+["cloudrun"]="https://default-6fajwjpnfa-bq.a.run.app"
+["gae"]="https://your-service-1.uc.r.appspot.com"
+)
+
 # VVVVV
 # WWWWW
 # XXXXX
